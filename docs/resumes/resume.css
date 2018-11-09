@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+.container {font-family:Merriweather; width: 900px; background-color: linen; border: 1px solid burlywood; padding: 1em; page-break-inside:auto;}
+a {color: rgb(255, 128, 0); text-decoration: none;}
+div.expr-block {border: 1px solid burlywood; margin-top: 0.5em; margin-bottom: 0.5em; padding: 0.5em;}
+div.paragraph {page-break-inside:avoid; }
+div.expr-block p {padding-left: 1em;}
+div.expr-block h4 {padding-left: 0.5em;}
+/*h4 {text-decoration-line: underline;text-decoration-style: wavy;}*/
+span.instance {border: 1px solid silver;padding:0.3em 0.5em;}
+img.co-logo {height: 20px; margin-bottom: -4px; margin-left: 0.5em;}
+dl {font-size: small; margin: 1em; padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 1em; padding-right: 1em; background-color: lemonchiffon; width: 30%; float: right;}
+h2 {border-bottom: 2px solid gray; width: 530px; padding-left: 1em;}
+table, th, td {border: 1px solid gray; border-collapse: collapse; padding-top: 0.2em; padding-bottom: 0.2em; padding-left: 1em; padding-right: 1em; font-size: small;}
+th {text-align: center;}
+td {text-align: left;}
+dd {margin-left: 1em; font-style: italic;}
+ul.toc-list {padding-left: 1.5em; width: 35%; float: right; padding-top: 0.5em; padding-bottom: 0.5em; font-size: small; background-color: lemonchiffon; border: 1px lightcyan;}
+ul.toc-list li ul {padding-left: 1.5em;}
+ul.toc-list a {color: darkslategrey;}
+header, footer {font-family:Aref Ruqaa;font-size:small;text-align:right;margin-right:1em;}
