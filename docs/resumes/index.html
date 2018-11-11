@@ -1,4 +1,5 @@
 <html>
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="Content-Style-Type" content="text/css" />
@@ -6,16 +7,20 @@
 	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="../../res/resume.css">
+	<script type="text/javascript" src="../../res/md5-min.js"></script>
 	<script type="text/javascript" src="../../res/password.js"></script>
+	<script type="text/javascript" src="../../res/resume.js"></script>
 </head>
-<body onload="init();">
-<div style="text-align:center;margin-bottom:1em;padding:0.5em 1em;" class="container">
-<span style="font-size:small;">Select a version: 
-	<input type="radio" value="en.html" name="switcher-radio" checked="checked"><span class="switcher-span">English HTML</span>
-	<input type="radio" value="cn.html" name="switcher-radio"><span class="switcher-span">中文网页</span>
-	<input type="radio" value="en.pdf" name="switcher-radio"><span class="switcher-span">English PDF</span>
-	<input type="radio" value="cn.pdf" name="switcher-radio"><span class="switcher-span">中文PDF版</span>
-</span>
-</div>
-<div id="main" class="container"></div></body>
+
+<body onload="init();"><div>
+	<table class="container switcher-c"><tbody><tr>
+		<td style="border:none;text-align:right;">Versions:</td>
+		<td style="border:none;"><input type="radio" value="en.html" name="switcher" checked="checked"><span class="switcher-span">English HTML</span></td>
+		<td><input type="radio" value="cn.html" name="switcher"><span class="switcher-span">中文网页</span></td>
+		<td><input type="radio" value="en.pdf" name="switcher"><span class="switcher-span">English PDF</span></td>
+		<td><input type="radio" value="cn.pdf" name="switcher"><span class="switcher-span">中文PDF</span></td>
+	</tr></tbody></table>
+	<div id="main"></div>
+</div></body>
+
 </html>
