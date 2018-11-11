@@ -10,7 +10,7 @@ table, th, td {border:1px solid burlywood;border-collapse:collapse;padding:0.2em
 th {text-align:center;}
 td {text-align:left;}
 
-.additional {width:30%;float:right;font-size:small;margin:1em;padding:0.5em 1em;background-color:lemonchiffon;border:2px double burlywood;}
+.additional {width:30%;float:right;font-size:small;margin:1em;padding:0.5em 1em;background-color:lemonchiffon;border:1px dotted gray;}
 .additional dd {font-style:italic;}
 ul.toc-list, ul.toc-list ul {padding-left:1.5em;}
 ul.toc-list a {color:darkslategrey;}
