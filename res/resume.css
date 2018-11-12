@@ -24,7 +24,7 @@ div.expr-block {border:1px solid burlywood;margin-top:0.5em;margin-bottom:0.5em;
 div.expr-block h3 a {color:inherit;}
 div.expr-block h4 {margin-top:0.6em;}
 div.expr-block p {padding-left:1em;margin-bottom:0.3em;}
-div.expr-block .exp-inst {border-left:1em solid burlywood;border-bottom:1px solid burlywood;padding:0.1em 1em 1em;margin:2em 8em 1em 1em;page-break-inside:avoid;}
+div.expr-block .exp-inst {border-left:1em solid burlywood;border-bottom:1px solid burlywood;padding:0.1em 1em 1em;margin:2em 1em 1em 1em;page-break-inside:avoid;}
 /*h4 {text-decoration-line:underline;text-decoration-style:wavy;}*/
 
 .switcher-c {margin:0 0.5em;}
