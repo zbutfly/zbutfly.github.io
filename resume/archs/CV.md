@@ -19,11 +19,11 @@
 
 ---
 
-<img src="https://www.dropbox.com/s/qs4badneq0l9vm8/me.westlake.jpg?dl=1" style="float: right; width: 130px;"	/>
+<img src="https://www.dropbox.com/s/qs4badneq0l9vm8/me.westlake.jpg?dl=1" style="float:right;width:130px;"	/>
 <table>
-<tr><th style="text-align: right; padding-left: 1em;">Gender: </th><td>Male</td><th style="text-align: right; padding-left: 1em;">Birthday: </th><td>1978/7</td></tr>
-<tr><th style="text-align: right; padding-left: 1em;">Phone: </th><td>+86-188-5788-4045</td><th style="text-align: right; padding-left: 1em;">E-mail: </th><td><a href="mailto:zbutfly@gmail.com">zbutfly@gmail.com</a></td></tr>
-<tr><th style="text-align: right; padding-left: 1em;">Location: </th><td colspan="3">Hangzhou, China</td></tr>
+<tr><th style="text-align:right;padding-left:1em;">Gender: </th><td>Male</td><th style="text-align:right;padding-left:1em;">Birthday: </th><td>1978/7</td></tr>
+<tr><th style="text-align:right;padding-left:1em;">Phone: </th><td>+86-188-5788-4045</td><th style="text-align:right;padding-left:1em;">E-mail: </th><td><a href="mailto:zbutfly@gmail.com">zbutfly@gmail.com</a></td></tr>
+<tr><th style="text-align:right;padding-left:1em;">Location: </th><td colspan="3">Hangzhou, China</td></tr>
 </table>
 
 

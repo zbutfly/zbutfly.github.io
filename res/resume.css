@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
-html {width:900px;font-family:Merriweather;border:4px double burlywood;background-color:linen;padding:0.5em;margin:0.5em;}
+html {width:1152px;font-family:Merriweather;border:4px double burlywood;background-color:linen;padding:0.5em;margin:0.5em;}
 div.paragraph {page-break-inside:avoid;}
 .container {padding:0.5em 1em;border:1px solid burlywood;padding:1em;page-break-inside:auto;font-family:Merriweather;}
 header, footer, .header, .footer {font-family:Aref Ruqaa;font-size:small;text-align:right;margin-right:1em;}
@@ -10,7 +10,12 @@ table, th, td {border:1px solid burlywood;border-collapse:collapse;padding:0.2em
 th {text-align:center;}
 td {text-align:left;}
 
-.additional {width:30%;float:right;font-size:small;margin:1em;padding:0.5em 1em;background-color:lemonchiffon;border:1px dotted gray;}
+h1 {margin-bottom: 0;}
+h2 {width:65%;margin:0 0 1.2em 0;padding:1em 0 0.5em 1em;border-bottom:2px solid gray;}
+h2#personal-information {width:55%;margin-left:120px;}
+img.co-logo {height:17px;margin-bottom:-3px;margin-left:1em;}
+
+.additional {width:25%;float:right;font-size:small;margin:1em;padding:0.5em 1em;background-color:lemonchiffon;border:1px dotted gray;}
 .additional dd {font-style:italic;}
 ul.toc-list, ul.toc-list ul {padding-left:1.5em;}
 ul.toc-list a {color:darkslategrey;}
@@ -18,11 +23,9 @@ ul.toc-list a {color:darkslategrey;}
 div.expr-block {border:1px solid burlywood;margin-top:0.5em;margin-bottom:0.5em;padding:0.5em;page-break-inside:avoid;}
 div.expr-block h3 a {color:inherit;}
 div.expr-block h4 {margin-top:0.6em;}
-div.expr-block p {padding-left:1em;margin-bottom: 0.3em;}
-div.expr-block .exp-inst {border-left:2px double burlywood;border-bottom:2px double burlywood;padding:0.1em 1em 1em;margin:2em 8em 1em 1em;page-break-inside:avoid;}
+div.expr-block p {padding-left:1em;margin-bottom:0.3em;}
+div.expr-block .exp-inst {border-left:1em solid burlywood;border-bottom:1px solid burlywood;padding:0.1em 1em 1em;margin:2em 8em 1em 1em;page-break-inside:avoid;}
 /*h4 {text-decoration-line:underline;text-decoration-style:wavy;}*/
-img.co-logo {height:20px;margin-bottom:-4px;margin-left:0.5em;}
-h2 {border-bottom:2px solid gray;width:530px;padding-left:1em;}
 
 .switcher-c {margin:0 0.5em;}
 .switcher-c td {padding:0.5em;width:25em;}
