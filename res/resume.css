@@ -28,4 +28,5 @@ div.expr-block .exp-inst {border-left:1em solid burlywood;border-bottom:1px soli
 /*h4 {text-decoration-line:underline;text-decoration-style:wavy;}*/
 
 .switcher-c {margin:0 0.5em;}
-.switcher-c td {padding:0.5em;width:25em;}
+.switcher-c td {padding:0.5em;width:25em;color:peru;}
+.switcher-c .switcher-span {cursor:pointer;margin-left:0.3em;}
