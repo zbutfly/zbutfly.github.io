@@ -1,29 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head profile="http://www.w3.org/2005/10/profile">
 	<title>Glazy Maze (कलविङ्क प्याक)</title>
-	<link rel="icon" type="image/png" href="res/img/kiss.png">
+	<link rel="icon" type="image/png" href="/res/img/kiss.png">
 	<meta name="author" content="Sean Zhang,कलविङ्क प्याक" />
 	<meta name="keywords" content="butfly,sean zhang,glazy maze,personal,कलविङ्क,प्याक,markdown" />
 	<meta name="description" content="Personal site for Sean Zhang (कलविङ्क प्याक, butfly)" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="Content-Style-Type" content="text/css" />
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="res/resume.css">
+	<link rel="stylesheet" type="text/css" href="/res/css/resume.css">
 	<style>
 		code {font-family:Merriweather;}
 	</style>
-	<script type="text/javascript" src="res/showdown-min.js"></script>
-	<!-- <script type="text/javascript" src="res/showdown-toc.js"></script> -->
-	<script>
-		var target = window.location.search.substr(1);
-		var xhr = new XMLHttpRequest();
-		xhr.open("GET", target, true);
-		xhr.onload = function (e) {
+	<script type="text/javascript" src="/res/js/http.js"></script>
+	<script type="text/javascript" src="/res/md/js/showdown-min.js"></script>
+	<!-- <script type="text/javascript" src="/res/md/js/markdown.min.js"></script> -->
+	<script type="text/javascript">
+		function init() {
 			var v = document.getElementById('md-viewer');
-			if (xhr.status === 200) {
+			http(window.location.search.substr(1), function (resp) {
 				var converter = new showdown.Converter();
-				v.innerHTML = converter.makeHtml(xhr.responseText);
+				v.innerHTML = converter.makeHtml(resp);
 				for (var i = 1; i < 7; i++) {
 					var hs = v.getElementsByTagName('h' + i);
 					if (hs.length > 0) {
@@ -31,16 +30,15 @@
 						return;
 					}
 				}
-			} else v.innerHTML = 'Http error, maybe my site service down.';
-		};
-		xhr.onerror = function (e) {
-			alert('Http error, maybe my site service down.');
-			document.getElementById('main').innerHTML = '';
-		};
-		xhr.send(null);
+			}, function (msg) {
+				v.innerHTML = msg;
+			});
+		}
 	</script>
 </head>
-<body>
+
+<body onload="init();">
 	<div id="md-viewer" class="container"></div>
 </body>
+
 </html>

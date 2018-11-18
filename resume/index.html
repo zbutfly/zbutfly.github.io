@@ -1,20 +1,49 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head profile="http://www.w3.org/2005/10/profile">
 	<title></title>
-	<link rel="icon" type="image/png" href="../res/img/kiss.png">
+	<link rel="icon" type="image/png" href="/res/img/kiss.png">
 	<meta name="author" content="Sean Zhang,कलविङ्क प्याक" />
 	<meta name="keywords" content="butfly,sean zhang,glazy maze,personal,कलविङ्क,प्याक" />
 	<meta name="description" content="Personal resume of Sean Zhang (कलविङ्क प्याक, butfly)" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="Content-Style-Type" content="text/css" />
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="../res/resume.css">
-	<script type="text/javascript" src="../res/md5-min.js"></script>
-	<script type="text/javascript" src="../res/check.js"></script>
-	<script type="text/javascript" src="../res/resume.js"></script>
+	<link rel="stylesheet" type="text/css" href="/res/css/resume.css">
+	<script type="text/javascript" src="/res/js/md5-min.js"></script>
+	<script type="text/javascript" src="/res/js/check.js"></script>
+	<script type="text/javascript" src="/res/js/http.js"></script>
+	<script type="text/javascript">
+		function init() {
+			document.getElementById('main').innerHTML = '';
+			var radios = document.getElementsByName('switcher');
+			for (var i = 0; i < radios.length; i++) {
+				radios[i].checked = undefined;
+				radios[i].onchange = function (resp) {
+					if (this.value.endsWith('\.html'))
+						http("inner/" + this.value, function (resp) {
+							document.getElementById('main').innerHTML = resp;
+							document.title = document.getElementById('doc-title').this.value;
+						}, function (msg) {
+							document.getElementById('main').innerHTML = msg;
+						});
+					else {
+						var dot = this.value.lastIndexOf('.');
+						window.location.replace("archs/" + this.value.substr(0, dot) + "-2018" + this.value.substr(dot));
+					}
+				};
+			}
+			var spans = document.getElementsByClassName('switcher-span');
+			for (var i = 0; i < spans.length; i++) {
+				spans[i].onclick = function () {
+					this.previousElementSibling.click();
+				};
+			}
+			radios[0].click();
+		}
+	</script>
 </head>
-
 <body onload="init();"><div>
 	<table class="container switcher-c"><tbody><tr>
 		<td style="border:none;color:inherit;cursor:auto;text-align:right;">Versions:</td>
@@ -22,9 +51,8 @@
 		<td><input type="radio" value="cn.html" name="switcher"><span class="switcher-span">中文网页</span></td>
 		<td><input type="radio" value="en.pdf" name="switcher"><span class="switcher-span">English PDF</span></td>
 		<td><input type="radio" value="cn.pdf" name="switcher"><span class="switcher-span">中文PDF</span></td>
-		<td style="text-align:center;"><a href="../index.html">Home</span></td>
+		<td style="text-align:center;"><a href="/index.html">Home</span></td>
 	</tr></tbody></table>
 	<div id="main"></div>
 </div></body>
-
-	</html>
+</html>
