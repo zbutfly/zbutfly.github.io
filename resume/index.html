@@ -24,7 +24,7 @@
 					if (this.value.endsWith('\.html'))
 						http("inner/" + this.value, function (resp) {
 							document.getElementById('main').innerHTML = resp;
-							document.title = document.getElementById('doc-title').this.value;
+							document.title = document.getElementById('doc-title').value;
 						}, function (msg) {
 							document.getElementById('main').innerHTML = msg;
 						});
