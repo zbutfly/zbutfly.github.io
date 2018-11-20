@@ -9,6 +9,7 @@ a {color:peru;text-decoration:none;}
 table, th, td {border:1px solid burlywood;border-collapse:collapse;padding:0.2em 1em;font-size:small;}
 th {text-align:center;}
 td {text-align:left;}
+hr {border:1px solid burlywood;}
 
 h1 {margin-bottom: 0;}
 h2 {width:65%;margin:0 0 1.2em 0;padding:1em 0 0.5em 1em;border-bottom:2px solid gray;}
@@ -30,3 +31,6 @@ div.expr-block .exp-inst {border-left:1em solid burlywood;border-bottom:1px soli
 .switcher-c {margin:0 0.5em;}
 .switcher-c td {padding:0.5em;width:25em;color:peru;}
 .switcher-c .switcher-span {cursor:pointer;margin-left:0.3em;}
+
+/* track */
+.clustrmaps-map-control {float:left;margin-top:0.5em!important;}/*width:100px!important;height:49px!important;*/
