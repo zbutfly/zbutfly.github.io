@@ -15,15 +15,15 @@
 		blockquote {color:DarkKhaki;}
 	</style>
 	<script type="text/javascript" src="/res/js/http.js"></script>
-	<!-- <script type="text/javascript" src="/res/md/js/showdown-min.js"></script> -->
-	<script type="text/javascript" src="/res/md/js/markdown.min.js"></script>
+	<script type="text/javascript" src="/res/md/js/showdown-min.js"></script>
+	<!-- <script type="text/javascript" src="/res/md/js/markdown.min.js"></script> -->
 	<script type="text/javascript">
 		function init() {
 			var v = document.getElementById('md-viewer');
 			http(window.location.search.substr(1), function (resp) {
-				// var converter = new showdown.Converter();
-				// v.innerHTML = converter.makeHtml(resp);
-				v.innerHTML = markdown.toHTML(resp);
+				var converter = new showdown.Converter({tables: true, strikethrough: true});
+				v.innerHTML = converter.makeHtml(resp);
+				// v.innerHTML = markdown.toHTML(resp);
 
 				for (var i = 1; i < 7; i++) {
 					var hs = v.getElementsByTagName('h' + i);
