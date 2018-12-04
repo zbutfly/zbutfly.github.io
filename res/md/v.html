@@ -40,11 +40,30 @@
 			}, function (msg) {
 				v.innerHTML = msg;
 			});
+			document.getElementById('color-switcher-none').checked = 'checked';
 		}
+		// function switch_color(from, to) {
+		// 	if (from && to) {
+		// 		document.getElementById('md-viewer').style['background'] = 'linear-gradient(to right,' + from + ',' + to + ')';
+		// 		document.getElementById('md-viewer').style['-webkit-background-clip'] = 'text';
+		// 		document.getElementById('md-viewer').style['color'] = 'transparent';
+		// 	} else {
+		// 		delete document.getElementById('md-viewer').style['background'];
+		// 		delete document.getElementById('md-viewer').style['-webkit-background-clip'];
+		// 		document.getElementById('md-viewer').style['color'] = 'auto';
+		// 	}
+		// }
 	</script>
 </head>
 <body onload="init();"><div class="container2">
-	<a href="/" style="margin:1em;float:right;font-size:small;">Back to Home</a>
+	<div style="margin:1em;float:right;font-size:small;text-align:right;" id="color-switcher-div">
+		<a href="/">Back to Home</a><br />
+		<!-- <div style="text-align: left;">
+			<input type="radio" name="color-switcher" id="color-switcher-none" onclick="switch_color();">None Color<br />
+			<input type="radio" name="color-switcher" id="color-switcher-op" onclick="switch_color('orange','purple');">Orange Purple<br />
+			<input type="radio" name="color-switcher" id="color-switcher-rb" onclick="switch_color('red','blue');">Red Blue<br />
+		</div> -->
+	</div>
 	<article id="md-viewer" class="container">
 		<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 	</article>
