@@ -4,7 +4,7 @@
 html {font-family:Merriweather;width:100%;}
 .container2 {max-width:60em;border:4px double burlywood;background-color:linen;padding:0.5em;margin:0.5em auto;}
 .container {padding:0.5em 1em;border:1px solid burlywood;padding:1em;page-break-inside:auto;}
-header, footer, .header, .footer {margin-top:1em;font-family:Aref Ruqaa;font-size:small;text-align:right;margin-right:1em;}
+header, footer, .header, .footer {margin-top:1em;font-family:Aref Ruqaa;font-size:small;text-align:left;margin-right:1em;}
 a {color:peru;text-decoration:none;}
 table, th, td {border:1px solid burlywood;border-collapse:collapse;padding:0.2em 1em;font-size:small;}
 th {text-align:center;}
